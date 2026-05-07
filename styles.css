@@ -539,6 +539,34 @@ pre {
   color: var(--muted);
 }
 
+.repo-demo-grid,
+.repo-file-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.repo-demo-card,
+.repo-file-group {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 18px;
+  background: var(--surface);
+  box-shadow: 0 12px 36px rgba(29, 36, 48, 0.07);
+}
+
+.repo-demo-card p {
+  color: var(--muted);
+}
+
+.repo-demo-card .button {
+  margin-top: 8px;
+}
+
+.repo-file-group .file-list {
+  grid-template-columns: 1fr;
+}
+
 @media (max-width: 860px) {
   .hero,
   .split,
@@ -556,7 +584,9 @@ pre {
   }
 
   .info-grid,
-  .file-list {
+  .file-list,
+  .repo-demo-grid,
+  .repo-file-groups {
     grid-template-columns: 1fr;
   }
 }

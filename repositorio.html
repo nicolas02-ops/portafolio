@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Repositorio completo | Nicolas Anacona</title>
+  <meta name="description" content="Mapa completo del repositorio del portafolio con demos ejecutables tipo terminal.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Principal">
+      <a class="brand" href="index.html">Nicolas Anacona</a>
+      <div class="nav-links">
+        <a href="index.html#proyectos">Proyectos</a>
+        <a href="#demos">Demos</a>
+        <a href="#archivos">Archivos</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <section class="project-hero">
+      <div>
+        <p class="eyebrow">Repositorio GitHub Pages</p>
+        <h1>Todo el codigo publicado</h1>
+        <p class="lead">
+          Esta pagina concentra los proyectos del repositorio, las demos tipo
+          terminal y el mapa de archivos para revisar el codigo fuente.
+        </p>
+      </div>
+      <div class="project-summary">
+        <strong>Como funciona</strong>
+        <p>
+          Python y C++ no se ejecutan directamente en GitHub Pages. Las demos
+          son simulaciones en JavaScript que respetan la salida de consola de
+          tus proyectos, mientras el codigo original queda enlazado para revision.
+        </p>
+      </div>
+    </section>
+
+    <section class="info-grid" aria-label="Resumen del repositorio">
+      <div class="info-box"><strong>4 demos</strong><span>Tetris, torneo, notas y triqui</span></div>
+      <div class="info-box"><strong>4 proyectos</strong><span>Python, C++ y Qt Console</span></div>
+      <div class="info-box"><strong>Codigo visible</strong><span>Archivos fuente y CSV publicados</span></div>
+    </section>
+
+    <section class="code-section playable-section" id="demos">
+      <div class="section-heading">
+        <p class="eyebrow">Ejecutar en navegador</p>
+        <h2>Demos tipo terminal</h2>
+      </div>
+
+      <div class="repo-demo-grid">
+        <article class="repo-demo-card">
+          <h3>Tetris</h3>
+          <p>Juego de consola simulado con tablero de caracteres, acciones `a/d/s/w/q` y dimensiones configurables.</p>
+          <a class="button primary" href="projects/tetris.html">Ejecutar Tetris</a>
+        </article>
+
+        <article class="repo-demo-card">
+          <h3>UdeAWorldCup</h3>
+          <p>Simulacion del menu real de Qt Console: carga, grupos, fase de grupos, eliminatorias y eficiencia.</p>
+          <a class="button primary" href="projects/torneo.html">Ejecutar torneo</a>
+        </article>
+
+        <article class="repo-demo-card">
+          <h3>Sistema de notas</h3>
+          <p>Menu universidad con eliminacion, mayor nota, promedios, cursos y prediccion grafica simulada.</p>
+          <a class="button primary" href="projects/notas.html">Ejecutar notas</a>
+        </article>
+
+        <article class="repo-demo-card">
+          <h3>Triqui</h3>
+          <p>Juego 1-9 contra computadora en formato terminal, siguiendo la estructura del proyecto Python.</p>
+          <a class="button primary" href="projects/triqui.html">Ejecutar triqui</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="code-section" id="archivos">
+      <div class="section-heading">
+        <p class="eyebrow">Mapa del repo</p>
+        <h2>Archivos publicados</h2>
+        <p class="note">
+          Se listan los archivos importantes del repositorio. Los builds,
+          ejecutables, caches y repos internos no se suben.
+        </p>
+      </div>
+
+      <div class="repo-file-groups">
+        <article class="repo-file-group">
+          <h3>Portafolio web</h3>
+          <ul class="file-list">
+            <li><a href="index.html">index.html</a></li>
+            <li><a href="repositorio.html">repositorio.html</a></li>
+            <li><a href="styles.css">styles.css</a></li>
+            <li><a href="README.md">README.md</a></li>
+          </ul>
+        </article>
+
+        <article class="repo-file-group">
+          <h3>Demos JavaScript</h3>
+          <ul class="file-list">
+            <li><a href="projects/tetris-demo.js">projects/tetris-demo.js</a></li>
+            <li><a href="projects/torneo-demo.js">projects/torneo-demo.js</a></li>
+            <li><a href="projects/notas-demo.js">projects/notas-demo.js</a></li>
+            <li><a href="projects/triqui-demo.js">projects/triqui-demo.js</a></li>
+          </ul>
+        </article>
+
+        <article class="repo-file-group">
+          <h3>Tetris C++</h3>
+          <ul class="file-list">
+            <li><a href="c++/desafio1/proyecto_tetris2/src/main.cpp">src/main.cpp</a></li>
+            <li><a href="c++/desafio1/proyecto_tetris2/src/game.cpp">src/game.cpp</a></li>
+            <li><a href="c++/desafio1/proyecto_tetris2/src/game.h">src/game.h</a></li>
+            <li><a href="c++/desafio1/proyecto_tetris2/src/board.cpp">src/board.cpp</a></li>
+            <li><a href="c++/desafio1/proyecto_tetris2/src/board.h">src/board.h</a></li>
+            <li><a href="c++/desafio1/proyecto_tetris2/src/pieces.cpp">src/pieces.cpp</a></li>
+            <li><a href="c++/desafio1/proyecto_tetris2/src/pieces.h">src/pieces.h</a></li>
+            <li><a href="c++/desafio1/proyecto_tetris2/tetris.pro">tetris.pro</a></li>
+          </ul>
+        </article>
+
+        <article class="repo-file-group">
+          <h3>Gestor de torneo C++/Qt</h3>
+          <ul class="file-list">
+            <li><a href="codigo/gestor_torneo/src/main.cpp">src/main.cpp</a></li>
+            <li><a href="codigo/gestor_torneo/src/Torneo.cpp">src/Torneo.cpp</a></li>
+            <li><a href="codigo/gestor_torneo/include/Torneo.h">include/Torneo.h</a></li>
+            <li><a href="codigo/gestor_torneo/src/Partido.cpp">src/Partido.cpp</a></li>
+            <li><a href="codigo/gestor_torneo/include/Partido.h">include/Partido.h</a></li>
+            <li><a href="codigo/gestor_torneo/src/Equipo.cpp">src/Equipo.cpp</a></li>
+            <li><a href="codigo/gestor_torneo/include/Equipo.h">include/Equipo.h</a></li>
+            <li><a href="codigo/gestor_torneo/src/Grupo.cpp">src/Grupo.cpp</a></li>
+            <li><a href="codigo/gestor_torneo/include/Grupo.h">include/Grupo.h</a></li>
+            <li><a href="codigo/gestor_torneo/desafio_2.pro">desafio_2.pro</a></li>
+            <li><a href="codigo/gestor_torneo/txt/selecciones_clasificadas_mundial.csv">selecciones CSV</a></li>
+            <li><a href="codigo/gestor_torneo/txt/jugadores_actualizados.csv">jugadores CSV</a></li>
+          </ul>
+        </article>
+
+        <article class="repo-file-group">
+          <h3>Sistema de notas Python</h3>
+          <ul class="file-list">
+            <li><a href="python/laboratorio%207%20cambios/main.py">main.py</a></li>
+            <li><a href="python/laboratorio%207%20cambios/cargar_datos.py">cargar_datos.py</a></li>
+            <li><a href="python/laboratorio%207%20cambios/funciones_notas.py">funciones_notas.py</a></li>
+            <li><a href="python/laboratorio%207%20cambios/proyec.py">proyec.py</a></li>
+            <li><a href="python/laboratorio%207%20cambios/plots.py">plots.py</a></li>
+            <li><a href="python/laboratorio%207%20cambios/pruebas.py">pruebas.py</a></li>
+            <li><a href="python/laboratorio%207%20cambios/notas_estudiantes.csv">notas_estudiantes.csv</a></li>
+            <li><a href="python/laboratorio%207%20cambios/hist_matriculados.csv">hist_matriculados.csv</a></li>
+          </ul>
+        </article>
+
+        <article class="repo-file-group">
+          <h3>Triqui Python</h3>
+          <ul class="file-list">
+            <li><a href="python/triqui/Main2.py">Main2.py</a></li>
+            <li><a href="python/triqui/triqui.py">triqui.py</a></li>
+            <li><a href="python/triqui/intro.txt">intro.txt</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

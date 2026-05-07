@@ -1,0 +1,6 @@
+==============================
+            TRIQUI
+==============================
+
+Bienvenido al juego de triqui.
+Elige X u O y trata de ganar antes que la computadora.

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Triqui en Python | Nicolas Anacona</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main class="project-page">
+    <a class="back-link" href="../index.html#proyectos">Volver al portafolio</a>
+
+    <section class="project-hero">
+      <div>
+        <p class="eyebrow">Python - Juego</p>
+        <h1>Triqui</h1>
+        <p class="lead">
+          Juego de tres en raya contra la computadora con tablero, validacion
+          de entradas, deteccion de ganador, bloqueo de jugadas y repeticion de
+          partidas.
+        </p>
+      </div>
+      <div class="project-summary">
+        <strong>Importante</strong>
+        <p>
+          El navegador no ejecuta Python de consola. La pagina documenta el
+          proyecto y enlaza todo el codigo para revision.
+        </p>
+      </div>
+    </section>
+
+    <section class="info-grid" aria-label="Resumen tecnico">
+      <div class="info-box"><strong>Lenguaje</strong><span>Python</span></div>
+      <div class="info-box"><strong>Tipo</strong><span>Juego de consola</span></div>
+      <div class="info-box"><strong>Logica</strong><span>IA simple y validacion</span></div>
+    </section>
+
+    <section class="run-box">
+      <h2>Como ejecutarlo</h2>
+      <p>Desde la carpeta del proyecto:</p>
+      <pre><code>cd python/triqui
+python Main2.py</code></pre>
+    </section>
+
+    <section class="code-section playable-section">
+      <div class="section-heading">
+        <p class="eyebrow">Demo ejecutable</p>
+        <h2>Probar triqui</h2>
+        <p class="note">
+          Demo tipo terminal del juego. Usa las mismas casillas del 1 al 9 y
+          muestra los turnos contra la computadora.
+        </p>
+      </div>
+      <div class="terminal-demo">
+        <pre id="triqui-terminal" class="terminal-screen" aria-live="polite"></pre>
+        <div class="terminal-toolbar">
+          <label>
+            Simbolo
+            <input id="player-letter" type="text" value="X" maxlength="1">
+          </label>
+          <button type="button" id="triqui-start">Iniciar</button>
+          <button type="button" id="triqui-reset">Reiniciar</button>
+        </div>
+        <div class="terminal-actions">
+          <button type="button" data-move="1">1</button>
+          <button type="button" data-move="2">2</button>
+          <button type="button" data-move="3">3</button>
+          <button type="button" data-move="4">4</button>
+          <button type="button" data-move="5">5</button>
+          <button type="button" data-move="6">6</button>
+          <button type="button" data-move="7">7</button>
+          <button type="button" data-move="8">8</button>
+          <button type="button" data-move="9">9</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="code-section">
+      <h2>Archivos de codigo</h2>
+      <ul class="file-list">
+        <li><a href="../python/triqui/Main2.py">Main2.py</a></li>
+        <li><a href="../python/triqui/triqui.py">triqui.py</a></li>
+        <li><a href="../python/triqui/intro.txt">intro.txt</a></li>
+      </ul>
+    </section>
+  </main>
+  <script src="triqui-demo.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tetris en C++ | Nicolas Anacona</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main class="project-page">
+    <a class="back-link" href="../index.html#proyectos">Volver al portafolio</a>
+
+    <section class="project-hero">
+      <div>
+        <p class="eyebrow">C++ - Juego de consola</p>
+        <h1>Tetris</h1>
+        <p class="lead">
+          Implementacion de Tetris en consola con tablero dinamico, piezas,
+          rotacion, validacion de colisiones, movimiento y limpieza de lineas.
+        </p>
+      </div>
+      <div class="project-summary">
+        <strong>Actualizado</strong>
+        <p>
+          El encabezado del proyecto ahora presenta el juego como
+          "TETRIS By nicolas anacona". La demo de abajo imita una terminal
+          para respetar la forma en que lo hiciste en C++.
+        </p>
+      </div>
+    </section>
+
+    <section class="info-grid" aria-label="Resumen tecnico">
+      <div class="info-box"><strong>Lenguaje</strong><span>C++</span></div>
+      <div class="info-box"><strong>Tipo</strong><span>Juego por consola</span></div>
+      <div class="info-box"><strong>Enfoque</strong><span>Bits, tablero y logica de juego</span></div>
+    </section>
+
+    <section class="run-box">
+      <h2>Como ejecutarlo</h2>
+      <p>Desde la carpeta del proyecto:</p>
+      <pre><code>cd c++/desafio1/proyecto_tetris2
+qmake tetris.pro
+mingw32-make
+./release/tetris.exe</code></pre>
+    </section>
+
+    <section class="code-section playable-section">
+      <div class="section-heading">
+        <p class="eyebrow">Demo ejecutable</p>
+        <h2>Probar Tetris en la pagina</h2>
+        <p class="note">
+          Esta demo usa JavaScript solo para simular la ejecucion en navegador.
+          La vista conserva el estilo de consola: tablero con caracteres,
+          entrada por letras y salida tipo terminal.
+        </p>
+      </div>
+
+      <div class="terminal-demo">
+        <div class="terminal-toolbar" aria-label="Configuracion del tablero">
+          <label>
+            Ancho
+            <input id="board-width" type="number" min="8" step="8" value="8">
+          </label>
+          <label>
+            Alto
+            <input id="board-height" type="number" min="8" value="16">
+          </label>
+          <button type="button" id="tetris-start">Iniciar</button>
+          <button type="button" id="tetris-reset">Reiniciar</button>
+        </div>
+
+        <pre id="tetris-terminal" class="terminal-screen" aria-live="polite"></pre>
+
+        <div class="terminal-actions" aria-label="Acciones del juego">
+          <button type="button" data-action="a">a - izq</button>
+          <button type="button" data-action="d">d - der</button>
+          <button type="button" data-action="s">s - bajar</button>
+          <button type="button" data-action="w">w - rotar</button>
+          <button type="button" data-action="q">q - salir</button>
+        </div>
+
+        <p class="control-help">
+          Tambien puedes usar el teclado: a, d, s, w y q.
+        </p>
+      </div>
+    </section>
+
+    <section class="code-section">
+      <h2>Archivos de codigo</h2>
+      <p class="note">Los enlaces abren cada archivo directamente para que un reclutador pueda revisar todo el codigo, no solo el main.</p>
+      <ul class="file-list">
+        <li><a href="../c++/desafio1/proyecto_tetris2/src/main.cpp">src/main.cpp</a></li>
+        <li><a href="../c++/desafio1/proyecto_tetris2/src/game.cpp">src/game.cpp</a></li>
+        <li><a href="../c++/desafio1/proyecto_tetris2/src/game.h">src/game.h</a></li>
+        <li><a href="../c++/desafio1/proyecto_tetris2/src/board.cpp">src/board.cpp</a></li>
+        <li><a href="../c++/desafio1/proyecto_tetris2/src/board.h">src/board.h</a></li>
+        <li><a href="../c++/desafio1/proyecto_tetris2/src/pieces.cpp">src/pieces.cpp</a></li>
+        <li><a href="../c++/desafio1/proyecto_tetris2/src/pieces.h">src/pieces.h</a></li>
+        <li><a href="../c++/desafio1/proyecto_tetris2/tetris.pro">tetris.pro</a></li>
+      </ul>
+    </section>
+  </main>
+  <script src="tetris-demo.js"></script>
+</body>
+</html>

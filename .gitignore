@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# C/C++ and Qt build output
+build/
+debug/
+release/
+*.o
+*.obj
+*.exe
+*.exe.debug
+Makefile
+Makefile.*
+.qmake.stash
+.qtcreator/
+
+# Editors and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Archives and temporary files
+*.zip
+*.tmp
+*.log

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistema de notas | Nicolas Anacona</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main class="project-page">
+    <a class="back-link" href="../index.html#proyectos">Volver al portafolio</a>
+
+    <section class="project-hero">
+      <div>
+        <p class="eyebrow">Python - Datos</p>
+        <h1>Sistema de notas</h1>
+        <p class="lead">
+          Programa para cargar datos de estudiantes, consultar notas, eliminar
+          registros, calcular promedios, ordenar resultados y generar una
+          prediccion de matriculados.
+        </p>
+      </div>
+      <div class="project-summary">
+        <strong>Importante</strong>
+        <p>
+          Esta pagina simula la ejecucion del menu real en navegador. Los
+          textos y salidas siguen `main.py`, `funciones_notas.py` y `proyec.py`.
+        </p>
+      </div>
+    </section>
+
+    <section class="info-grid" aria-label="Resumen tecnico">
+      <div class="info-box"><strong>Lenguaje</strong><span>Python</span></div>
+      <div class="info-box"><strong>Datos</strong><span>CSV</span></div>
+      <div class="info-box"><strong>Funciones</strong><span>Promedios, ordenamiento y prediccion</span></div>
+    </section>
+
+    <section class="run-box">
+      <h2>Como ejecutarlo</h2>
+      <p>Desde la carpeta del proyecto:</p>
+      <pre><code>cd "python/laboratorio 7 cambios"
+python main.py</code></pre>
+    </section>
+
+    <section class="code-section playable-section">
+      <div class="section-heading">
+        <p class="eyebrow">Demo ejecutable</p>
+        <h2>Probar sistema de notas</h2>
+        <p class="note">
+          Simula el menu de consola con los datos del CSV, respetando el orden
+          de impresion y los mensajes del programa original.
+        </p>
+      </div>
+      <div class="terminal-demo">
+        <pre id="notas-terminal" class="terminal-screen" aria-live="polite"></pre>
+        <div class="terminal-toolbar">
+          <label>
+            Documento
+            <input id="student-id" type="text" value="1033492448">
+          </label>
+          <label>
+            Ano prediccion
+            <input id="prediction-year" type="number" value="2028">
+          </label>
+        </div>
+        <div class="terminal-actions">
+          <button type="button" data-notas-action="1">1 - eliminar</button>
+          <button type="button" data-notas-action="2">2 - mayor nota</button>
+          <button type="button" data-notas-action="3">3 - promedios</button>
+          <button type="button" data-notas-action="4">4 - cursos</button>
+          <button type="button" data-notas-action="5">5 - grafica</button>
+          <button type="button" data-notas-action="0">0 - salir</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="code-section">
+      <h2>Archivos de codigo</h2>
+      <ul class="file-list">
+        <li><a href="../python/laboratorio%207%20cambios/main.py">main.py</a></li>
+        <li><a href="../python/laboratorio%207%20cambios/cargar_datos.py">cargar_datos.py</a></li>
+        <li><a href="../python/laboratorio%207%20cambios/funciones_notas.py">funciones_notas.py</a></li>
+        <li><a href="../python/laboratorio%207%20cambios/proyec.py">proyec.py</a></li>
+        <li><a href="../python/laboratorio%207%20cambios/plots.py">plots.py</a></li>
+        <li><a href="../python/laboratorio%207%20cambios/pruebas.py">pruebas.py</a></li>
+        <li><a href="../python/laboratorio%207%20cambios/notas_estudiantes.csv">notas_estudiantes.csv</a></li>
+        <li><a href="../python/laboratorio%207%20cambios/hist_matriculados.csv">hist_matriculados.csv</a></li>
+      </ul>
+    </section>
+  </main>
+  <script src="notas-demo.js"></script>
+</body>
+</html>

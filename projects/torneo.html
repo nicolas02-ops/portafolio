@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestor de torneo | Nicolas Anacona</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main class="project-page">
+    <a class="back-link" href="../index.html#proyectos">Volver al portafolio</a>
+
+    <section class="project-hero">
+      <div>
+        <p class="eyebrow">C++ - Qt Console</p>
+        <h1>Gestor de torneo</h1>
+        <p class="lead">
+          Aplicacion de consola para administrar equipos, jugadores, grupos,
+          partidos, fechas, registros y estadisticas desde archivos CSV.
+        </p>
+      </div>
+      <div class="project-summary">
+        <strong>Importante</strong>
+        <p>
+          Esta pagina simula la salida de Qt Console en navegador. Los textos,
+          opciones y flujo siguen el menu real de `Torneo::ejecutarMenu()`.
+        </p>
+      </div>
+    </section>
+
+    <section class="info-grid" aria-label="Resumen tecnico">
+      <div class="info-box"><strong>Lenguaje</strong><span>C++17</span></div>
+      <div class="info-box"><strong>Framework</strong><span>Qt Console</span></div>
+      <div class="info-box"><strong>Datos</strong><span>CSV de jugadores y selecciones</span></div>
+    </section>
+
+    <section class="run-box">
+      <h2>Como ejecutarlo</h2>
+      <p>Desde la carpeta del proyecto:</p>
+      <pre><code>cd c++/desafio_2
+qmake desafio_2.pro
+mingw32-make
+./release/desafio_2.exe</code></pre>
+    </section>
+
+    <section class="code-section playable-section">
+      <div class="section-heading">
+        <p class="eyebrow">Demo ejecutable</p>
+        <h2>Probar gestor de torneo</h2>
+        <p class="note">
+          Simulacion tipo terminal del menu real: carga de datos, conformacion
+          de grupos, fase de grupos, eliminatorias y reporte de eficiencia.
+        </p>
+      </div>
+      <div class="terminal-demo">
+        <pre id="torneo-terminal" class="terminal-screen" aria-live="polite"></pre>
+        <div class="terminal-actions">
+          <button type="button" data-torneo-action="1">1 - cargar datos</button>
+          <button type="button" data-torneo-action="2">2 - conformar grupos</button>
+          <button type="button" data-torneo-action="3">3 - fase grupos</button>
+          <button type="button" data-torneo-action="4">4 - torneo completo</button>
+          <button type="button" data-torneo-action="5">5 - eficiencia</button>
+          <button type="button" data-torneo-action="0">0 - salir</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="code-section">
+      <h2>Archivos de codigo</h2>
+      <p class="note">Esta lista muestra la estructura completa del proyecto principal: clases, cabeceras, datos y archivo Qt.</p>
+      <ul class="file-list">
+        <li><a href="../codigo/gestor_torneo/src/main.cpp">src/main.cpp</a></li>
+        <li><a href="../codigo/gestor_torneo/src/Torneo.cpp">src/Torneo.cpp</a></li>
+        <li><a href="../codigo/gestor_torneo/include/Torneo.h">include/Torneo.h</a></li>
+        <li><a href="../codigo/gestor_torneo/src/Equipo.cpp">src/Equipo.cpp</a></li>
+        <li><a href="../codigo/gestor_torneo/include/Equipo.h">include/Equipo.h</a></li>
+        <li><a href="../codigo/gestor_torneo/src/Jugador.cpp">src/Jugador.cpp</a></li>
+        <li><a href="../codigo/gestor_torneo/include/Jugador.h">include/Jugador.h</a></li>
+        <li><a href="../codigo/gestor_torneo/src/Partido.cpp">src/Partido.cpp</a></li>
+        <li><a href="../codigo/gestor_torneo/include/Partido.h">include/Partido.h</a></li>
+        <li><a href="../codigo/gestor_torneo/src/Grupo.cpp">src/Grupo.cpp</a></li>
+        <li><a href="../codigo/gestor_torneo/include/Grupo.h">include/Grupo.h</a></li>
+        <li><a href="../codigo/gestor_torneo/src/Fecha.cpp">src/Fecha.cpp</a></li>
+        <li><a href="../codigo/gestor_torneo/include/Fecha.h">include/Fecha.h</a></li>
+        <li><a href="../codigo/gestor_torneo/src/EstadisticaHistorica.cpp">src/EstadisticaHistorica.cpp</a></li>
+        <li><a href="../codigo/gestor_torneo/include/EstadisticaHistorica.h">include/EstadisticaHistorica.h</a></li>
+        <li><a href="../codigo/gestor_torneo/src/EstadisticaPartido.cpp">src/EstadisticaPartido.cpp</a></li>
+        <li><a href="../codigo/gestor_torneo/include/EstadisticaPartido.h">include/EstadisticaPartido.h</a></li>
+        <li><a href="../codigo/gestor_torneo/src/RegistroJugadorPartido.cpp">src/RegistroJugadorPartido.cpp</a></li>
+        <li><a href="../codigo/gestor_torneo/include/RegistroJugadorPartido.h">include/RegistroJugadorPartido.h</a></li>
+        <li><a href="../codigo/gestor_torneo/src/MonitorRecursos.cpp">src/MonitorRecursos.cpp</a></li>
+        <li><a href="../codigo/gestor_torneo/include/MonitorRecursos.h">include/MonitorRecursos.h</a></li>
+        <li><a href="../codigo/gestor_torneo/desafio_2.pro">desafio_2.pro</a></li>
+        <li><a href="../codigo/gestor_torneo/txt/jugadores_actualizados.csv">txt/jugadores_actualizados.csv</a></li>
+        <li><a href="../codigo/gestor_torneo/txt/selecciones_clasificadas_mundial.csv">txt/selecciones_clasificadas_mundial.csv</a></li>
+      </ul>
+    </section>
+  </main>
+  <script src="torneo-demo.js"></script>
+</body>
+</html>

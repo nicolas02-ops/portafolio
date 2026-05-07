@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nicolas Anacona | Portafolio</title>
+  <meta name="description" content="Portafolio de Nicolas Anacona con proyectos en Python, C++ y Qt.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Principal">
+      <a class="brand" href="#inicio">Nicolas Anacona</a>
+      <div class="nav-links">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Desarrollador en formacion</p>
+        <h1>Nicolas Anacona</h1>
+        <p class="lead">
+          Construyo proyectos academicos y personales con Python, C++ y Qt,
+          enfocandome en logica de programacion, estructuras de datos, manejo
+          de archivos y aplicaciones de consola bien organizadas.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#proyectos">Ver proyectos</a>
+          <a class="button secondary" href="#contacto">Contactar</a>
+        </div>
+      </div>
+
+      <div class="code-visual" aria-label="Resumen visual del portafolio">
+        <div class="terminal-bar">
+          <span></span><span></span><span></span>
+        </div>
+        <pre><code>portfolio/
+  python/
+    triqui/
+    laboratorio_7/
+  c++/
+    tetris/
+    mundial/
+
+skills = ["Python", "C++", "Qt", "Git"]</code></pre>
+      </div>
+    </section>
+
+    <section class="section" id="proyectos">
+      <div class="section-heading">
+        <p class="eyebrow">Trabajo practico</p>
+        <h2>Proyectos destacados</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-visual tetris-visual" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="project-body">
+            <p class="project-type">C++ - Juego de consola</p>
+            <h3>Tetris</h3>
+            <p>
+              Juego de Tetris en C++ con tablero dinamico, piezas, rotacion,
+              validacion de movimientos y limpieza de lineas.
+            </p>
+            <a href="projects/tetris.html">Ver proyecto completo</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual tournament-visual" aria-hidden="true">
+            <div></div><div></div><div></div><div></div>
+          </div>
+          <div class="project-body">
+            <p class="project-type">C++ - Qt Console</p>
+            <h3>Gestor de torneo</h3>
+            <p>
+              Sistema para administrar equipos, jugadores, partidos, grupos y
+              estadisticas usando clases separadas y archivos CSV.
+            </p>
+            <a href="projects/torneo.html">Ver proyecto completo</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual data-visual" aria-hidden="true">
+            <span style="height: 42%"></span>
+            <span style="height: 68%"></span>
+            <span style="height: 55%"></span>
+            <span style="height: 82%"></span>
+            <span style="height: 74%"></span>
+          </div>
+          <div class="project-body">
+            <p class="project-type">Python - Datos</p>
+            <h3>Sistema de notas</h3>
+            <p>
+              Programa para cargar estudiantes desde CSV, calcular promedios,
+              consultar notas, ordenar resultados y generar predicciones.
+            </p>
+            <a href="projects/notas.html">Ver proyecto completo</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual triqui-visual" aria-hidden="true">
+            <span>X</span><span>O</span><span>X</span>
+            <span>O</span><span>X</span><span></span>
+            <span></span><span>O</span><span>X</span>
+          </div>
+          <div class="project-body">
+            <p class="project-type">Python - Juego</p>
+            <h3>Triqui</h3>
+            <p>
+              Juego de tres en raya contra la computadora con validacion de
+              entradas, deteccion de ganador y estrategia basica de bloqueo.
+            </p>
+            <a href="projects/triqui.html">Ver proyecto completo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split" id="habilidades">
+      <div>
+        <p class="eyebrow">Perfil tecnico</p>
+        <h2>Habilidades</h2>
+      </div>
+      <div class="skills">
+        <span>Python</span>
+        <span>C++</span>
+        <span>Qt</span>
+        <span>Programacion orientada a objetos</span>
+        <span>CSV y archivos</span>
+        <span>Git</span>
+        <span>Logica de juegos</span>
+        <span>Analisis de datos</span>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <p class="eyebrow">Contacto</p>
+      <h2>Disponible para oportunidades junior o practicas</h2>
+      <p>
+        Puedes actualizar esta seccion con tu correo, LinkedIn y GitHub antes
+        de enviar el portafolio a empresas.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:tu-correo@ejemplo.com">tu-correo@ejemplo.com</a>
+        <a href="https://github.com/tu-usuario">github.com/tu-usuario</a>
+        <a href="https://www.linkedin.com/in/tu-usuario">linkedin.com/in/tu-usuario</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
